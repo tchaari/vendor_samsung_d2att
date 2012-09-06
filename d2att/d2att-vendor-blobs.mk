@@ -161,3 +161,16 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2att/proprietary/etc/firmware/cyttsp_8960_cdp.hex:system/etc/firmware/cyttsp_8960_cdp.hex \
         vendor/samsung/d2att/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
         vendor/samsung/d2att/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
+#copy kernel and modules
+PRODUCT_COPY_FILES += \
+	vendor/samsung/d2att/proprietary/boot.img:system/slimkernel/boot.img \
+	vendor/samsung/d2att/proprietary/lib/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
+	vendor/samsung/d2att/proprietary/lib/modules/qce40.ko:system/lib/modules/qce40.ko \
+	vendor/samsung/d2att/proprietary/lib/modules/spidev.ko:system/lib/modules/spidev.ko \
+	vendor/samsung/d2att/proprietary/lib/modules/qcrypto.ko:system/lib/modules/qcrypto.ko \
+	vendor/samsung/d2att/proprietary/lib/modules/qcedev.ko:system/lib/modules/qcedev.ko \
+	vendor/samsung/d2att/proprietary/lib/modules/vpnclient.ko:system/lib/modules/vpnclient.ko \
+	vendor/samsung/d2att/proprietary/lib/modules/gspca_main.ko:system/lib/modules/gpsca_main.ko \
+	vendor/samsung/d2att/proprietary/lib/modules/btlock.ko:system/lib/modules/btlock.ko \
+	vendor/samsung/d2att/proprietary/lib/modules/dhd.ko:system/lib/modules/dhd.ko \
+	vendor/samsung/d2att/proprietary/lib/modules/evbug.ko:system/lib/modules/evbug.ko
